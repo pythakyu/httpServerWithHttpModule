@@ -38,6 +38,9 @@ const httpRequestListener = function (request, response) {
     if (url === "/users") {
       response.writeHead(200, { "content-type": "application/json" });
       response.end(JSON.stringify({ message: "userCreated" }));
+    } else if (url === "/posts") {
+      response.writeHead(200, { "content-type": "application/json" });
+      response.end(JSON.stringify({ message: "userCreated" }));
     }
   }
 };
